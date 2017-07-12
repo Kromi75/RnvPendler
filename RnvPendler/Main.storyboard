@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="9">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="8">
+            <objects>
+                <viewController id="9" sceneMemberID="viewController" customClass="ViewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="6"/>
+                        <viewControllerLayoutGuide type="bottom" id="7"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="10">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="13" translatesAutoresizingMaskIntoConstraints="NO" separatorStyle="default" allowsSelection="NO">
+                                <rect key="frame" x="35" y="82" width="530" height="483"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes/>
+                                <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Abfahrtszeiten" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="16" translatesAutoresizingMaskIntoConstraints="NO" misplaced="YES">
+                                <rect key="frame" x="35" y="44" width="129" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint id="81" firstItem="13" firstAttribute="leading" secondItem="10" secondAttribute="leading" constant="35"/>
+                            <constraint id="82" firstItem="10" firstAttribute="bottom" secondItem="13" secondAttribute="bottom" constant="35"/>
+                            <constraint id="91" firstItem="13" firstAttribute="top" secondItem="16" secondAttribute="bottom" constant="17"/>
+                            <constraint id="92" firstItem="10" firstAttribute="trailing" secondItem="13" secondAttribute="trailing" constant="35"/>
+                            <constraint id="93" firstItem="16" firstAttribute="top" secondItem="6" secondAttribute="bottom" constant="24"/>
+                            <constraint id="94" firstItem="16" firstAttribute="leading" secondItem="10" secondAttribute="leading" constant="35"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="DepartureListTableView" destination="13" id="name-outlet-13"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="11" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="262" y="185"/>
+        </scene>
+    </scenes>
+</document>
